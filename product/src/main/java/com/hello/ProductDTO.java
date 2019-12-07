@@ -2,6 +2,7 @@ package com.hello;
 
 public class ProductDTO {
 	
+	private String name;
 	private String review1;
 	private String review2;
 	private String review3;
@@ -30,6 +31,12 @@ public class ProductDTO {
 	}
 	public void setDetails(String details) {
 		this.details = details;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
