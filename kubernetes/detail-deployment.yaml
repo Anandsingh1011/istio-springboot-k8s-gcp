@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: detail-service
-        image: saturnism/detail-service-istio:1.0
+        image: gcr.io/project-vnv/detail:latest
         livenessProbe:
           initialDelaySeconds: 90
           httpGet:
