@@ -9,3 +9,4 @@ gcloud container clusters get-credentials vnv --zone us-central1-a --project PRO
 # Build all project source code, create docker image an push to registery
 
 
+Run buildall.sh
