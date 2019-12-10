@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(url = "${detail-service-url}", name = "productdetail")
-public interface RemotePositionMicroserviceCalls {
+@FeignClient(url = "${retting-service-url}", name = "retting")
+public interface RettingMicroserviceCalls {
 
-	@RequestMapping(method = RequestMethod.GET, value = "/details/")
-	public String getDetails(@RequestParam() String productName);
+	@RequestMapping(method = RequestMethod.GET, value = "/retting/")
+	public String getRettings(@RequestParam() String productName);
 
 }

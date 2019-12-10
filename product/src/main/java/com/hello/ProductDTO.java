@@ -3,6 +3,7 @@ package com.hello;
 public class ProductDTO {
 	
 	private String name;
+	private String retting;
 	private String review1;
 	private String review2;
 	private String review3;
@@ -37,6 +38,12 @@ public class ProductDTO {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getRetting() {
+		return retting;
+	}
+	public void setRetting(String retting) {
+		this.retting = retting;
 	}
 
 }

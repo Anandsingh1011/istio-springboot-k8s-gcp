@@ -2,29 +2,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: detail-service
+  name: review3-service
   labels:
-    app: detail-service
+    app: review3-service
     version: "1.0"
     visualize: "true"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: detail-service
+      app: review3-service
       version: "1.0"
       serving: "true"
   template:
     metadata:
       labels:
-        app: detail-service
+        app: review3-service
         serving: "true"
         version: "1.0"
         visualize: "true"
     spec:
       containers:
-      - name: detail-service
-        image: gcr.io/project-vnv/detail:v1
+      - name: review3-service
+        image: gcr.io/project-vnv/review3:v1
         ports:
         - containerPort: 8080
           name: http

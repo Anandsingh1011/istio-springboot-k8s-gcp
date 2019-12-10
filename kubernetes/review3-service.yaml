@@ -2,9 +2,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: product-service
+  name: review3-service
   labels:
-    app: product-service
+    app: review3-service
     visualize: "true"
 spec:
   ports:
@@ -12,5 +12,6 @@ spec:
       targetPort: 8080
       name: http
   selector:
-    app: product-service
+    app: review3-service
     serving: "true"
+ 
